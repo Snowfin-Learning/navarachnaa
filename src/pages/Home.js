@@ -20,7 +20,7 @@ const Home = () => {
      things that `,
     subparagraph: `change this industry
     are both the thinkers and doers 
-    in the same person.`
+    in the same person.`,
   });
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -30,10 +30,15 @@ const Home = () => {
       <Helmet>
         <title>Navarachnaa</title>
         <meta name="description" content="A Step towards innovation" />
-        <meta name="keywords" content="travel, travel tours, airline" />
       </Helmet>
-      <Header heading={state.heading} paragraph={state.paragraph} subparagraph={state.subparagraph}>
-        <button className="btn-default">Register</button>
+      <Header
+        heading={state.heading}
+        paragraph={state.paragraph}
+        subparagraph={state.subparagraph}
+      >
+        <a href="https://bit.ly/3J3gXDv">
+          <button className="btn-default">Register</button>
+        </a>
       </Header>
       <Destinations />
       <Services />
