@@ -14,6 +14,8 @@ import GalleryComponent from "../components/gallery/GalleryComponent";
 import Footer from "../components/footer/Footer";
 import SVVVImage from "../components/pages-parts/SvvvImage";
 import SvvvImage from "../components/pages-parts/SvvvImage";
+import Download from "../components/pages-parts/Download";
+import Details from "../components/Details/Details";
 const Home = () => {
   // const { dispatch } = useContext(ModelContext);
   const [state] = useState({
@@ -60,9 +62,11 @@ const Home = () => {
       </Svvv>
       <Destinations />
       <Services />
-      
+
       {/* <Reviews /> */}
       <GalleryComponent />
+      <Download />
+      <Details />
       <Footer />
     </>
   );
